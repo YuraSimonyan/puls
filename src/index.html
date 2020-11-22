@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+   
 </head>
 <body>
     <section class="promo">
@@ -99,10 +101,10 @@
                 Просто заполните форму звявки <br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="phone" required type="tel" placeholder="Ваше телефон"> 
-                <input name="email" required type="email" placeholder="Ваше E-mail">
+            <form id="consultation-form" class="feed-form">
+                <input name="name"  type="text" placeholder="Ваше имя">
+                <input name="phone" type="tel" placeholder="Ваше телефон"> 
+                <input name="email"  type="email" placeholder="Ваше E-mail">
                 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -331,7 +333,7 @@
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">И мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form feed-form_mt25" action="#">
+            <form  class="feed-form feed-form_mt25" action="#">
                 <input name="name" required type="text" placeholder="Ваше имя">
                 <input name="phone" required type="tel" placeholder="Ваше телефон"> 
                 <input name="email" required type="email" placeholder="Ваше E-mail">
@@ -364,9 +366,11 @@
         </div>
 
     </div>
+   
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
