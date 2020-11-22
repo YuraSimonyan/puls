@@ -169,3 +169,25 @@
         }
     }
 }
+
+@media (max-width: 320px){
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            padding: 0;
+            margin-top: 43px;
+        }
+        &__tab {
+            width: 204px;
+            height: 44px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &__tab:nth-child(3) {
+            margin-bottom: 0px;
+        }
+        &__content {
+            justify-content: center;
+        }
+    }
+}
