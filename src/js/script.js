@@ -87,5 +87,32 @@ for (let item of value){
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
+
+
+
+    $(function($){
+        $("input[name=phone]").mask("+7 99/99/9999");
+         
+        
+     });
+
+    ///smootj scroll and page up
+    $(window).scroll(function(){
+       if($(this).scrollTop()>1600){
+           $('.pageup').fadeIn();
+       }else{
+           $('.pageup').fadeOut();
+       }
+       $("a[href^='#']").click(function(){
+        let _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+});
+    });
+    
+ 
+       
+ 
+ 
   });
   
