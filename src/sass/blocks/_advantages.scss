@@ -24,19 +24,7 @@
         align-items: center;
         
         
-        img {
-            
-            transition: 0.5s all;
-            width: 70px;
-            height: 70px;
-            &:hover{
-                // transition: 1s all;
-                width: 100px;
-                height: 100px;
-                
-                
-            }
-        }
+        
         
         h2 {
             color: #0d0d0d;
@@ -55,6 +43,24 @@
                 color: $main-color;
             }
         }
+    }
+    &__icon {
+            
+            
+        width: 70px;
+        height: 70px;
+        &_animated {
+            
+            animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+            &:hover {
+                animation-play-state: running;
+            }
+        }
+        
     }
 
 }
